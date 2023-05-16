@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+ header {
+  background-color: #008000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em;
+} 
+
+.titulo_header{
+font-size: 30px;
+color: #f3f2f2;
+text-align: center;
+}
+.subtitulo{
+  font-size: 15px;
+  color: #f8f8f8;
+  text-align: center;
+  } */
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  background-image: url('../img/fnd.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9; 
+}
+main h2{
+  background-color: #008000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form {
+  background-color: #fbf6f6;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 1px;
+  padding-bottom: 0;
+}
+
+input[type="number"] {
+  font-size: 1.2em;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #008000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  color: #ae321f;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 20px;
+  }
+
+  form {
+    padding: 5px;
+  }
+
+  input[type="submit"] {
+    font-size: 1em;
+  }
+}
