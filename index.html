@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Densidad de Siembra - Temática Agrícola</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/logo.jfif" alt="Logo de la empresa" class="logo">
+      </div>
+      <div class="title-container">
+        <h1 class="titulo_header">AGRO10</h1>
+        <h4 class="subtitulo">Calculadora de Densidad de Siembra</h4>
+      </div>
+      <div class="sub-container">
+        
+      </div>
+     
+    </header>
+
+    <br>
+    <main>
+      <form>
+        <label for="distancia-plantas">Distancia entre plantas (centimetros):</label>
+        <input type="number" id="distancia-plantas" name="distancia-plantas" required>
+        
+        <label for="distancia-filas">Distancia entre filas (en centimetros):</label>
+        <input type="number" id="distancia-filas" name="distancia-filas" required>
+        
+        <label for="area-siembra">Área de siembra (en metros cuadrados):</label>
+        <input type="number" id="area-siembra" name="area-siembra" required>
+        <div id="resultado"> </div>
+        <input type="submit" value="Calcular">
+      </form>
+      
+     
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
