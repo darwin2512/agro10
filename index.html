@@ -9,20 +9,32 @@
   <body>
     <header>
       <div class="logo-container">
-        <img src="img/logo.jfif" alt="Logo de la empresa" class="logo">
+        <a href="index.html">
+          <img src="img/logo.jfif" alt="Logo de la empresa" class="logo">
+        </a>
       </div>
       <div class="title-container">
         <h1 class="titulo_header">AGRO10</h1>
         <h4 class="subtitulo">Calculadora de Densidad de Siembra</h4>
       </div>
-      <div class="sub-container">
-        
+
+      <!-- div que tengo para el menu hamburguesa y que debería ir en la posicion flex: 2 en el css -->
+      <div class="menu">
+        <select class="select-menu" onchange="window.location.href = this.value;" name="enviar=" id="calculo de densidad de siembra">
+          <option value="index.html">Menu</option>
+            <option value="ficha_maiz.html">Ficha Tecnica de Maíz</option>
+            <option value="ficha_arroz.html">Ficha Técnica de Arroz</option>
+            <option value="ficha_banano.html">Ficha Técnica de Banano</option>
+            <option value="ficha_pinha.html">Ficha Técnica de Piña</option>
+            <option value="ficha_platano.html">Ficha Técnica de Plátano</option>
+            <option value="ficha_frijol.html">Ficha Técnica del Fríjol</option>
+        </select>
       </div>
      
     </header>
 
     <br>
-    <main>
+    <main class="main_index">
       <form>
         <label for="distancia-plantas">Distancia entre plantas (centimetros):</label>
         <input type="number" id="distancia-plantas" name="distancia-plantas" required>
